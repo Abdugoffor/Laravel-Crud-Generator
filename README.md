@@ -1,6 +1,6 @@
 # Laravel CRUD Generator
 
-## Laravel CRUD Generator - bu paket Laravelda model uchun CRUD operatsiyalarini avtomatik yaratish jarayonini soddalashtiradi. Bu paket Controllerlar, Requestlar, Viewlar, Route'lar avtomatik yaratadi model va migratsiyalarni oldindan yaratish zarur
+#### Laravel CRUD Generator - bu paket Laravelda model uchun CRUD operatsiyalarini avtomatik yaratish jarayonini soddalashtiradi. Bu paket Controllerlar, Requestlar, Viewlar, Route'lar avtomatik yaratadi model va migratsiyalarni oldindan yaratish zarur
 
 ### O‘rnatish
 
