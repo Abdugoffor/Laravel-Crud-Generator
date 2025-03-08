@@ -266,8 +266,9 @@ EOT;
     <div class="container">
         <h1>{$name}</h1>
         @if (session('success'))
-            <div class="alert alert-success" role="alert">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         @endif
         <a href="{{ route('{$pluralName}.create') }}" class="btn btn-primary mb-3">Create {$name}</a>
@@ -347,8 +348,9 @@ EOT;
     <div class="container mt-5">
         <h1>Create {$name}</h1>
         @if (session('success'))
-            <div class="alert alert-success" role="alert">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         @endif
         <form method="POST" action="{{ route('{$pluralName}.store') }}">
@@ -400,8 +402,9 @@ EOT;
     <div class="container mt-5">
         <h1>Edit {$name}</h1>
         @if (session('success'))
-            <div class="alert alert-success" role="alert">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         @endif
         <form method="POST" action="{{ route('{$pluralName}.update', \$model->id) }}">
@@ -432,8 +435,9 @@ EOT;
     <div class="container mt-5">
         <h1>{$name} Details</h1>
         @if (session('success'))
-            <div class="alert alert-success" role="alert">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
                 {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         @endif
 {$showFields}
