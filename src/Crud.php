@@ -270,7 +270,7 @@ EOT;
                 {{ session('success') }}
             </div>
         @endif
-        <a href="{{ route('{$pluralName}.create') }}" class="btn btn-primary mb-3">Create New {$name}</a>
+        <a href="{{ route('{$pluralName}.create') }}" class="btn btn-primary mb-3">Create {$name}</a>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -280,7 +280,7 @@ EOT;
                 <form method="GET" action="{{ route('{$pluralName}.index') }}">
                     <tr>
 {$searchInputs}
-                        <th><button type="submit" class="btn btn-secondary btn-sm">Search</button></th>
+                        <th><button type="submit" class="btn btn-outline-primary btn-sm">Search</button></th>
                     </tr>
                 </form>
             </thead>
@@ -290,12 +290,12 @@ EOT;
                     <td>{{ (\$models->currentPage() - 1) * \$models->perPage() + \$loop->iteration }}</td>
 {$tableRow}
                     <td>
-                        <a href="{{ route('{$pluralName}.show', \$model->id) }}" class="btn btn-info btn-sm">View</a>
-                        <a href="{{ route('{$pluralName}.edit', \$model->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="{{ route('{$pluralName}.show', \$model->id) }}" class="btn btn-outline-primary btn-sm">View</a>
+                        <a href="{{ route('{$pluralName}.edit', \$model->id) }}" class="btn btn-outline-success btn-sm">Edit</a>
                         <form action="{{ route('{$pluralName}.destroy', \$model->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</button>
+                            <button type="submit" class="btn btn-outline-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</button>
                         </form>
                     </td>
                 </tr>
@@ -345,7 +345,7 @@ EOT;
 
 @section('content')
     <div class="container mt-5">
-        <h1>Create New {$name}</h1>
+        <h1>Create {$name}</h1>
         @if (session('success'))
             <div class="alert alert-success" role="alert">
                 {{ session('success') }}
@@ -437,7 +437,7 @@ EOT;
             </div>
         @endif
 {$showFields}
-        <a href="{{ route('{$pluralName}.edit', \$model->id) }}" class="btn btn-warning btn-sm">Edit</a>
+        <a href="{{ route('{$pluralName}.edit', \$model->id) }}" class="btn btn-success">Edit</a>
         <a href="{{ route('{$pluralName}.index') }}" class="btn btn-secondary">Back</a>
     </div>
 @endsection
