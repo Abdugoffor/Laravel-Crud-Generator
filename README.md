@@ -9,7 +9,7 @@ Paketni composer orqali o‘rnatish:
 ```bash
 composer require abdugoffor/laravel-crud-generator:dev-main
 ```
-##### Namuna:
+### Namuna:
 #### 1. Model va Migratsiya Yaratish
 
 ```bash
