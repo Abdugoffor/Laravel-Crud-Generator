@@ -34,7 +34,7 @@ public function up()
 php artisan migrate
 ```
 
-### Agar select bo'lib chiqishi kerak maydonlarni public $enumValues massivini ichida kelishi zarur
+### Agar select bo'lib chiqishi kerak maydonlar bo'lsa public $enumValues massivini ichida bo'lishi zarur
 ```bash
 public $enumValues = [
     'status' => [
