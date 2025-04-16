@@ -33,6 +33,20 @@ public function up()
 ```bash
 php artisan migrate
 ```
+
+### Agar select bo'lib chiqishi kerak maydonlarni public $enumValues massivini ichida kelishi zarur
+```bash
+public $enumValues = [
+    'status' => [
+        'values' => ['draft', 'published', 'archived'],
+        'default' => 'draft',
+    ],
+    'category' => [
+        'values' => ['news', 'blog', 'review'],
+        'default' => 'news',
+    ],
+];
+```
 #### 4. CRUD Kodini Avtomatik Yaratish
 
 ```bash
