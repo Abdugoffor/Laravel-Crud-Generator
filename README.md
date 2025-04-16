@@ -38,6 +38,11 @@ php artisan migrate
 ```bash
 php artisan make:crud Post
 ```
+#### 5. API CRUD Kodini Avtomatik Yaratish
+
+```bash
+php artisan make:api-crud Post
+```
 #### 5. Laravelni Ishga Tushirish
 ```bash
 php artisan serve
