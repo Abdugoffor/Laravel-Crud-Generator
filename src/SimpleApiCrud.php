@@ -7,9 +7,9 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 
-class ApiCrud extends Command
+class SimpleApiCrud extends Command
 {
-    protected $signature   = 'make:api-crud {name}';
+    protected $signature   = 'make:simple-api-crud {name}';
     protected $description = 'Generate API CRUD based on an existing model with controller, requests, and resource in model-specific Api subdirectories';
 
     protected $enumFields = [];

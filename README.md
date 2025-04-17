@@ -50,12 +50,12 @@ public $enumValues = [
 #### 4. CRUD Kodini Avtomatik Yaratish
 
 ```bash
-php artisan make:crud Post
+php artisan make:simple-crud Post
 ```
 #### 5. API CRUD Kodini Avtomatik Yaratish
 
 ```bash
-php artisan make:api-crud Post
+php artisan make:simple-api-crud Post
 ```
 #### 5. Laravelni Ishga Tushirish
 ```bash

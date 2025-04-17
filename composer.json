@@ -25,6 +25,12 @@
             ]
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./laravel-crud-generator"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
