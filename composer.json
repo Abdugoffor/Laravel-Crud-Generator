@@ -28,7 +28,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/Abdugoffor/Admin-CRUD-generator-with-Api"
+            "url": "https://github.com/Abdugoffor/Laravel-Crud-Generator.git"
         }
     ],
     "minimum-stability": "dev",
