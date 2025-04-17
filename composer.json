@@ -31,9 +31,6 @@
             "url": "https://github.com/Abdugoffor/Admin-CRUD-generator-with-Api"
         }
     ],
-    "require": {
-        "abdugoffor/admin-crud-generator-with-api": "dev-main"
-    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
