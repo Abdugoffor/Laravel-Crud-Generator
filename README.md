@@ -61,4 +61,4 @@ php artisan make:simple-api-crud Post
 ```bash
 php artisan serve
 ```
-### http://127.0.0.1:8000/posts sahifasiga tashrif buyurib, CRUD tizimingizni ishlatishingiz mumkin
+### example.com/posts sahifasiga tashrif buyurib, CRUD tizimingizni ishlatishingiz mumkin
